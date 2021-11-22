@@ -51,7 +51,7 @@ bindsym $mod+q kill
 # start dmenu (a program launcher)
 # bindsym $mod+d exec dmenu_run
 
-bindsym $mod+d exec "rofi -modi drun,combi -combi-modi run,drun -show combi -icon-theme 'Papirus' -show-icons -kb-cancel 'Ctrl-c'"
+bindsym $mod+d exec "rofi -modi drun,combi -combi-modi drun,run -show combi -icon-theme 'Papirus' -show-icons -kb-cancel 'Ctrl-c'"
 bindsym $mod+p exec "rofi -show window -icon-theme 'Papirus' -show-icons -kb-cancel 'Ctrl-c'"
 # bindsym $mod+p exec rofi -modi drun,combi -combi-modi run,drun -sho
 # bindsym $mod+d exec rofi -show run
@@ -101,7 +101,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+f floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod+n focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -246,3 +246,13 @@ bindsym $mod+m exec playerctl play-pause
 exec clipster -d
 bindsym $mod+c exec clipster -sp
 
+# for_window [class="ImGui_learn"] floating enable
+for_window [class="OcachoGame"] floating enable
+# for_window [title="OcachoGame"] floating enable
+# for_window [all] title_window_icon padding 1px
+
+for_window [id=0x3200002] floating enable
+for_window [id=0x3400002] floating enable
+
+for_window [id=0x4800002] floating enable
+for_window [id=0x1a00002] floating enable
